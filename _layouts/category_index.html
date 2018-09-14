@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  {% include head.html %}
+  <body>
+    {% include header.html %}
+    <div class="page-content">
+	  <div class="home">
+		<h1>{{ page.title }} {{ paginator.total_pages }}</h1>
+		<ul class="post-list">
+		  {% for post in site.categories.[page.category] %}
+		  <li>
+			<article>
+			  {% include article.html %}
+			</article>
+		  </li>
+		  {% endfor %}
+		</ul>
+	  </div>
+	  <aside class="categories">
+		{% include recent_posts.html %}
+		{% include category_list.html %}
+	  </aside>
+	</div>
+    {% include footer.html %}
+  </body>
+</html>

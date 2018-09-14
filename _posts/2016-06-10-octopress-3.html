@@ -1,0 +1,56 @@
+---
+title: "Octopress 3"
+date: 2016-06-10 vie 00:05
+layout: post
+categories: 
+- Emacs
+tags: 
+- Emacs, 
+- octopress, 
+- org-mode
+published: true
+comments: 
+---
+<p>
+I have to admit that I've been quite lazy the last three years in
+terms of blogging, but I have some time lately and I've moved my old
+blog to octopress 3.
+</p>
+
+<p>
+In general looks like it's easier to work with once is set up
+properly, but there's not so much documentation as with octopress 2
+and build it up is a little bit more try and error.
+</p>
+
+<p>
+The basic directory structure is very similar to any other jekyll
+based blog (with directories for include, templates, posts, &#x2026;), but,
+as the oposite you could find in Octopress 2, you don't have a
+Rakefile to build the blog neither a source dir with the sass theme
+and the blog structure. So, if you want to see your changes locally
+you have to run jekyll serve.
+</p>
+
+<p>
+One of the things that I think they have enhace in Octopress 3 is the
+publishing management, because, instead of using Rake as with
+Octopress 2, they provide a ruby command to manage all that, providing
+octopress new {post|page|draft} to generate a new post, page or
+draft and octopress {publish|unpublish} to publish a draft or
+unpublish a post, so the management of posts is now more easier from
+my point of view. Finally, with octopress deploy you can deploy your
+changes to the final destination (github, another git repo, rsync, S3,
+&#x2026;).
+</p>
+
+<p>
+You can have more information about Octopress 3 and Jekyll in the
+<a href="https://github.com/octopress/octopress">Octopress 3 github page</a> and in the <a href="https://jekyllrb.com/">Jekyll project page</a>. So, now that I
+have my blog again working and linked with org-octopress I hope I can
+write more often.
+</p>
+
+<p>
+Happy Hacking.
+</p>

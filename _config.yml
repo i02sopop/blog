@@ -1,0 +1,28 @@
+# Site settings
+title: Ritho's blog
+email: palvarez@ritho.net
+description: > # this means to ignore newlines until "baseurl:"
+  My name is Pablo Alvarez de Sotomayor Posadillo, and I’m a Free
+  Software activist from Cordoba (Spain). I'm currently living in Mexico
+  City, and I'm currently working on Segundamano Mexico, which it's part
+  of Schibsted Classifieds Media.
+
+  In this blog I'll write both technical posts and personal opinions,
+  but I'll try to focus on the technical posts as much as possible. This
+  is my personal blog, so every opinion I write here is my own personal
+  opinion. If you want to know a little more about me you can visit
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://blog.ritho.net" # the base hostname & protocol for your site
+github_username:  i02sopop
+
+# Build settings
+markdown: kramdown
+
+category_indexes: true
+category_dir: "category"
+category_title_prefix: ""
+
+paginate: 5          # Posts per page on the blog index
+paginate_path: "/:num/"  # Directory base for pagination URLs eg. /posts/2/
+
+gems: [jekyll-paginate, jekyll-gist, jekyll-time-to-read]
