@@ -25,4 +25,4 @@ category_title_prefix: ""
 paginate: 5          # Posts per page on the blog index
 paginate_path: "/:num/"  # Directory base for pagination URLs eg. /posts/2/
 
-gems: [jekyll-paginate, jekyll-gist, jekyll-time-to-read]
+plugins: [jekyll-paginate, jekyll-gist, jekyll-time-to-read]

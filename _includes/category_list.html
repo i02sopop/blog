@@ -4,7 +4,7 @@
 	<li><a href="/">All posts</a> [{{ site.posts | size }}]</li>
 	{% assign sortedcats = site.categories | sort %}
 	{% for category in sortedcats %}
-	<li><a href="/category/{{ category[0] | downcase }}">{{ category[0] | capitalize }}</a> [{{ category[1].size }}]</li>
+	<li><a href="/category/{{ category[0] | downcase | replace: ' ', '-' }}">{{ category[0] | capitalize }}</a> [{{ category[1].size }}]</li>
 	{% endfor %}
   </ul>
 </section>

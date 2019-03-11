@@ -7,7 +7,7 @@
 	  <div class="home">
 		<h1>{{ page.title }} {{ paginator.total_pages }}</h1>
 		<ul class="post-list">
-		  {% for post in site.categories.[page.category] %}
+		  {% for post in site.categories[page.category] %}
 		  <li>
 			<article>
 			  {% include article.html %}

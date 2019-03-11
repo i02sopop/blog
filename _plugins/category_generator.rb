@@ -20,6 +20,7 @@
 #                          'Category: ').
 
 require 'stringex'
+require 'i18n'
 
 module Jekyll
 
@@ -82,7 +83,6 @@ module Jekyll
 
   # The Site class is a built-in Jekyll class with access to global site config information.
   class Site
-
     # Creates an instance of CategoryIndex for each category page, renders it, and
     # writes the output to a file.
     #
@@ -126,9 +126,7 @@ module Jekyll
 ERR
       end
     end
-
   end
-
 
   # Jekyll hook - the generate method is called by jekyll, and generates all of the category pages.
   class GenerateCategories < Generator
@@ -136,11 +134,10 @@ ERR
     priority :low
 
     def generate(site)
+      I18n.enforce_available_locales = false
       site.write_category_indexes
     end
-
   end
-
 
   # Adds some extra filters used during the category creation process.
   module Filters
