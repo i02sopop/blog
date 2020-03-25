@@ -9,7 +9,7 @@
 </header>
 <div class="entry-content">
   {% unless page.url contains post.url %}
-  {{ post.content | strip_html | truncatewords:70 }}
+  {{ post.content | truncatewords:70 }}
   <p class="read-more"><a href="{{ post.url }}">Read more</a></p>
   {% else %}
   {{ post.content }}
